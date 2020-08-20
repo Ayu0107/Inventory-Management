@@ -1,0 +1,141 @@
+/* CSS style sheet */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* font size for doc */
+
+html{
+    font-size: 10px;
+}
+
+/* Background Image */
+
+body::before{
+    content:"";
+    background: url("bg-14.jpg");
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    min-height: 80rem;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation Bar */
+
+ #navbar{
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(161 169 183 / 82%);
+    height: 8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}  
+
+.loginbutton{
+    font-family: 'Source Serif Pro', serif;
+    background: none;
+    font-size: 3rem;
+    border: none; 
+    outline: none;
+    padding: 2rem 3rem 2rem 3rem;
+    cursor: pointer;
+}
+
+#signuplink{
+    font-family: 'Source Serif Pro', serif;
+    text-decoration: none;
+    font-size: 3rem;
+    color:black;
+    padding: 2rem 3rem 2rem 3rem;
+    margin-right: 5rem;
+    text-align: center;
+}
+
+.loginbutton:hover {
+    background-color: black;
+    color: white;
+}
+
+#signuplink:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Dropdown from login button */
+
+.dropdown{
+    float: right;
+    overflow: hidden;
+}  
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background: grey;
+    z-index:1;
+    min-width: 17.6rem;
+    box-shadow: 0rem 2rem 2rem 0rem rgb(255, 255, 255);
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+.dropdown-content a:hover {
+    background-color: black;
+    color:white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main Section text */
+
+#home{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;   
+    padding: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 10rem;
+}
+
+#home h2{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 4.5rem;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    padding-right: 40rem;
+}
+
+#home p{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 40rem;
+}
+
+/* Main Section Image */
+
+#home img{
+    float: right;   
+    width: 70rem;
+    height: 60rem;
+    margin: 0rem;
+}
