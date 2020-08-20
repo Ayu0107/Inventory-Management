@@ -110,7 +110,7 @@ body::before{
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;   
-    padding: 2rem;
+    padding: 0rem;
     margin-top: 0rem;
     margin-bottom: 10rem;
 }
@@ -118,17 +118,13 @@ body::before{
 #home h2{
     font-family: 'Source Serif Pro', serif;
     font-size: 4.5rem;
-    padding-top: 7rem;
-    padding-bottom: 4rem;
-    padding-right: 40rem;
+    padding: 10rem 40rem 4rem 2rem;
 }
 
 #home p{
     font-family: 'Nanum Myeongjo', serif;
     font-size: 2.5rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-right: 40rem;
+    padding: 1.5rem 40rem 1.5rem 2rem;
 }
 
 /* Main Section Image */
