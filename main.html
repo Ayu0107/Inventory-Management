@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS file -->
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="main.css">
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Source+Serif+Pro:wght@600&display=swap"
@@ -16,43 +16,114 @@
 
 <body>
 
-<!-- Navigation Bar -->
+    <!-- Navigation Bar -->
 
     <nav id="navbar">
         <div class="dropdown">
             <button class="loginbutton">LOGIN
-                <i class="fa fa-caret-down"></i>
+                <!-- <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
                 <a href="#">Admin</a>
                 <a href="#">Sales Head</a>
                 <a href="#">Purchase Head</a>
                 <a href="#">Sales Person</a>
-            </div>
+            </div> -->
         </div>
-        <a href="#" id="signuplink"> SIGNUP </a>
+        <a href="#" id="navlink"> SIGNUP </a>
+        <a href="#" id="navlink"> ABOUT </a>
+        <a href="#" id="navlink"> CONTACT US </a>
     </nav>
 
-<!-- Main Section of page -->
+    <!-- Main Section of page -->
 
     <section id="home">
-        <div>
-            <img src="sideimg.png" alt="Inventory">
-            <h2>
-                Stop stressing over inventory <br> Use StackInOrder
-            </h2>
-            <p>
-                Tracking inventory manually through books is difficult and results in late delivery and stock-out
-                situations.
-            </p>
-            <p>
-                StackInOrder helps you in saving your time and recording everything at a single place.
-            </p>
-            <p>
-                No contracts or special hardware required—just create an account and you’re ready to go.
-            </p>
+
+        <!-- <img src="sideimg.png" alt="Inventory"> -->
+        <h2>
+            Stop stressing over inventory <br> Use StackInOrder
+        </h2>
+        <p>
+            Tracking inventory manually through books is difficult and results in late delivery and stock-out
+            situations.
+        </p>
+        <p>
+            StackInOrder helps you in saving your time and recording everything at a single place.
+        </p>
+        <p>
+            No contracts or special hardware required—just create an account and you’re ready to go.
+        </p>
+
+    </section>
+    <section>
+        <div id="whyus">
+            <h3>WHY STOCKHOME?</h3>
+            <div class="container">
+                <div class='imgtext'>
+                    <img src="save money-1.png" alt="save money" id='chosingsh'>
+                    <span>Save Money</span>
+                </div>
+                <div class='imgtext'>
+                    <img src="save time-1.png" alt="save time" id='chosingsh'>
+                    <span>Save Time</span>
+                </div>
+                <div class='imgtext'>
+                    <img src="easy to access-1.png" alt="easy to access" id='chosingsh'>
+                    <span>Easy to Use</span>
+                </div>
+            </div>
+            <div id='section3'>
+                <p>"What's not to love about this FREE Online Inventory System!"</p>
+                <button id="createaccount">CREATE ACCOUNT</button>
+                <img src="free.png" alt="free" id="free">
+            </div>
         </div>
     </section>
+    <section id='teammembers'>
+        <h3>Team Members</h3>
+        <div id="team">
+            <div class="imgtext">
+                <img src="1.jpg" alt="1">
+                <span class="name">Ayushi Aggarwal</span>
+                <span class="task"> Lorem, ipsum.</span>            
+            </div>
+            <div class="imgtext">
+                <img src="2.jpg" alt="2">
+                <span class="name">P. Ravindran</span>
+                <span class="task">Lorem, ipsum.</span>            
+            </div>
+            <div class="imgtext">
+                <img src="3.jpg" alt="3">
+                <span class="name">Sowmya Rajnarayanan</span>
+                <span class="task">Lorem, ipsum.</span>            
+            </div>
+        </div>
+    </section>
+    <section id="contactus">
+        <h3>Contact Us</h3>
+        <p>We will try to resolve your problem as soon as possible.</p>
+        <div id="form">
+                <input type="text" name='Myname' placeholder="Name" class="input" id="name"> 
+                <input type="email" name='Myemail' placeholder="Email id" class="input" id="email"> 
+                <input type="tel" name='Myphonenumber' placeholder="Phone number" class="input" id="phonenumber"> 
+                <textarea name="Message" id="doubt" cols="30" rows="10" placeholder="Message"></textarea>
+        </div>
+        <button id="submit">SUBMIT</button>
+    </section>
+    <footer>
+        <p>Follow us on</p>
+        <div>
+            <a href="#">
+                <img src="twitter.png" alt="twitter">
+            </a>
+            <a href="#">
+                <img src="insta.jpg" alt="instagram">
+            </a>
+            <a href="#">
+                <img src="fb.png" alt="facebook">
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
