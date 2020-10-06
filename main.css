@@ -207,7 +207,8 @@ body::before{
     border: solid black 2px;
     padding: 2rem;
     cursor: pointer; 
-    margin: 1rem;   
+    margin: 1rem;  
+    border-radius: 10px; 
 }
 
 #createaccount:hover {
@@ -216,7 +217,7 @@ body::before{
 }
 
 #teammembers{
-    background-color: rgb(58, 154, 192);
+    background-color: rgb(45, 181, 235);
     padding: 4rem;
     padding-bottom: 12rem;
 }
@@ -266,7 +267,7 @@ body::before{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(5, 117, 161);
+    background-color: rgb(16, 148, 201);
     padding: 4rem;
     padding-top: 7rem;
     padding-bottom: 12rem;
@@ -320,10 +321,6 @@ body::before{
 }
 
 #doubt{
-    font-size: 2rem;
-    padding: 1rem;
-    margin: 2rem;
-    border-radius: 1rem;
     grid-area:doubt;
     min-width:50rem;
 }
@@ -337,6 +334,7 @@ body::before{
     cursor: pointer; 
     margin: 1rem; 
     text-align: center;
+    border-radius: 10px;
 }
 
 #submit:hover {
@@ -344,13 +342,15 @@ body::before{
     color: white;
 }
 
+/* footer */
+
 footer{
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding:3rem;
+    padding:1rem;
 }
 
 footer p{
@@ -360,7 +360,7 @@ footer p{
 }
 
 footer img{
-    margin:1rem;
+    margin:0.5rem;
     padding:1rem;
     width: 40px;
     height:40px;
@@ -372,6 +372,8 @@ footer img{
 footer img:hover{
     border: solid black 3px;
 }
+
+/* Responsive Website */
 
 @media only screen and (max-width: 1128px){
     #form{
