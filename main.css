@@ -48,7 +48,7 @@ body::before{
     cursor: pointer;
 }
 
-#navlink{
+.navlink{
     font-family: 'Source Serif Pro', serif;
     text-decoration: none;
     font-size: 3rem;
@@ -158,8 +158,9 @@ body::before{
     
 .container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
+    gap: 2rem;
     }
     
 .imgtext{
@@ -170,9 +171,9 @@ body::before{
 }
 
 #section2 div div img{
-    height: 340px;
-    width: 340px;
-    /* border: 2px solid  rgb(0, 0, 17); */
+    height: 34rem;
+    width: 34rem;
+    margin: 2rem;
 }
     
 #section2 div div span{
@@ -198,8 +199,8 @@ body::before{
 }
 
 #free{
-    width: 300px;
-    height: 300px;
+    width: 30rem;
+    height: 30rem;
 }
 
 #createaccount{
@@ -228,7 +229,7 @@ body::before{
 
 #team{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     margin-top: 8rem;
 }
@@ -249,8 +250,8 @@ body::before{
 }
 
 #team img{
-     width: 200px;
-     height: 200px;
+     width: 20rem;
+     height: 20rem;
      border: black solid 2px;
      border-radius: 200px;
  }
@@ -395,7 +396,39 @@ footer img:hover{
 
 /* for form in contact us */
 
+@media only screen and (max-width: 1368px){
+    .hidden{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1192px){
+    html{
+        font-size: 8px;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+
+    
+    #section3 p{
+        font-family: 'Source Serif Pro', serif;
+        font-size: 4rem;
+        grid-column: 1/span 3;
+        margin: 2rem;
+    }
+}
+
 @media only screen and (max-width: 1128px){
+    html{
+        font-size: 8px;
+    }
+    
     #form{
         display: grid;
         grid-template-areas: 
@@ -403,11 +436,82 @@ footer img:hover{
         'email'
         'phonenumber' 
         'doubt';
-        margin-right: 10rem;    
-        margin-left: 10rem;   
-        margin-top: 5rem; 
+        margin-right: 3rem;    
+        margin-left: 3rem;   
+        margin-top: 3rem; 
+    }
+    
+    #home h2{
+        font-family: 'Source Serif Pro', serif;
+        font-size: 3rem;
+        padding: 2rem 40rem 4rem 4rem;
+    }
+    
+    #home p{
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 2rem;
+        padding: 0.5rem 30rem 1.5rem 4rem;
+    }
+
+    #name{
+        grid-area:name;
+        min-width:25rem;
+    }
+    
+    #email{
+        grid-area:email;
+        min-width:25rem;
+    }
+    
+    #phonenumber{
+        grid-area:phonenumber;
+        min-width:25rem;
+    }
+    
+    #doubt{
+        grid-area:doubt;
+        min-width:25rem;
+    }
+    
+    #section2 h3{
+        font-family: 'Source Serif Pro', serif;
+        font-size: 4rem;
+        text-align: center;
+        margin: 1rem;
+    }
+    
+    #team{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-top: 8rem;
     }
 }
 
+
+
+@media only screen and (max-width: 400px){
+    html{
+        font-size: 6px;
+    }
+
+    #home h2{
+        font-family: 'Source Serif Pro', serif;
+        font-size: 3rem;
+        padding: 2rem 10rem 4rem 4rem;
+    }
+
+    #home p{
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 2rem;
+        padding: 0.5rem 15rem 1.5rem 4rem;
+    }
+
+    #section2 div div img{
+        height: 25rem;
+        width: 25rem;
+        margin: 2rem;
+    }
+}
 
 
