@@ -256,7 +256,7 @@ body::before{
      border-radius: 200px;
  }
 
- .imgtext{
+.imgtext{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,7 +305,7 @@ body::before{
 
 /* Form in Contact us */
 
-#form{
+form{
     display: grid;
     grid-template-areas: 
     'name doubt'
@@ -344,6 +344,13 @@ body::before{
     min-width:50rem;
 }
 
+#submitbtn{
+    grid-column: 1/span2;
+    display: flex;
+    justify-content: center;
+
+}
+
 #submit{
     font-family: 'Source Serif Pro', serif;
     background: white;
@@ -354,6 +361,7 @@ body::before{
     margin: 1rem; 
     text-align: center;
     border-radius: 10px;
+    width: 18rem;
 }
 
 #submit:hover {
@@ -429,7 +437,7 @@ footer img:hover{
         font-size: 8px;
     }
     
-    #form{
+    form{
         display: grid;
         grid-template-areas: 
         'name'
