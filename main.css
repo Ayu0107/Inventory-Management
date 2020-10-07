@@ -63,7 +63,7 @@ body::before{
     color: white;
 }
 
-#navlink:hover {
+.navlink:hover {
     background-color: black;
     color: white;
 }
