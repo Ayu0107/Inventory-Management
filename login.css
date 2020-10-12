@@ -1,21 +1,22 @@
-/* CSS style sheet */
+/* CSS Style
 
 *{
     margin: 0px;
     padding: 0px;
-}
+} */
 
 /* font size for doc */
 
-html{
+/* html{
     font-size: 10px;
-}
+} */
+
 
 /* Background Image */
 
-body::before{
+/* body::before{
     content:"";
-    background: url("bg-14.jpg");
+    background: url("bg-15.jpg");
     position: absolute;
     opacity: 1;
     width: 100%;
@@ -24,14 +25,14 @@ body::before{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 
 /* Navigation Bar */
 
- #navbar{
+/* #navbar{
     overflow: hidden;
     position: relative;
-    background-color: rgba(161 169 183 / 82%);
+    background-color: rgb(115, 215, 255);
     height: 8rem;
     display: flex;
     justify-content: flex-end;
@@ -66,72 +67,183 @@ body::before{
 #signuplink:hover {
     background-color: black;
     color: white;
+} */
+
+/* title  */
+/* 
+#title{
+    font-size: 6rem;
+    margin-right: 35rem;
+    margin-left: 38rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+}
+  */
+/* section area */
+
+/* #loginbox{
+    display: grid;
+    grid-template-areas: 
+    'aside1 form form aside2'
+    'aside1 form form aside2'; */
+    /* grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(auto-fit,minmax(400px,1fr)); */
+/* }
+
+#aside1{
+    grid-area: aside1;
 }
 
-/* Dropdown from login button */
-
-.dropdown{
-    float: right;
-    overflow: hidden;
-}  
-
-.dropdown-content {
-    display: none;
-    position: fixed;
-    background: grey;
-    z-index:1;
-    min-width: 17.6rem;
-    box-shadow: 0rem 2rem 2rem 0rem rgb(255, 255, 255);
+#aside2{
+    grid-area: aside2;
 }
 
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 1.2rem 1.6rem;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    font-size: 2rem;
-  }
-
-.dropdown-content a:hover {
-    background-color: black;
-    color:white;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Main Section text */
-
-#home{
+#form{
+    grid-area: form;
+    display: grid;
+    grid-template-columns: 1fr; */
+    /* grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)); */
+    /* border: solid 2px  black;
+    background-color:  rgb(115, 215, 255);
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;   
-    padding: 0rem;
-    margin-top: 0rem;
-    margin-bottom: 10rem;
+    align-content: space-around;
+    align-self: center;
+    justify-content: center;
+    display: inline-block;
 }
 
-#home h2{
+#form label{
+    font-size: 3rem;
+    color: white;
+}
+
+#form input{
+    height: 3rem;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#form div{
+    font-size: 1rem;
+    color: burlywood;
+    align-self: flex-end;
+    
+}
+
+
+#login{
     font-family: 'Source Serif Pro', serif;
-    font-size: 4.5rem;
-    padding: 10rem 40rem 4rem 2rem;
+    background: white;
+    font-size: 3rem;
+    border: solid black 2px;
+    padding: 1rem;
+    cursor: pointer; 
+    margin: 1rem; 
+    text-align: center;
+    border-radius: 10px;
+} */
+
+/* FROM INTERNET */
+
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url("bg-20.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Source Serif Pro', serif;
 }
 
-#home p{
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: 2.5rem;
-    padding: 1.5rem 40rem 1.5rem 2rem;
+.container{
+height: 100%;
+align-content: center;
 }
 
-/* Main Section Image */
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
 
-#home img{
-    float: right;   
-    width: 70rem;
-    height: 60rem;
-    margin: 0rem;
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: black;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+padding: 15px 0px;
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: white;
+background-color: black;
+}
+
+.links{
+color:white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+.eyebtn{
+    border: transparent;
+    background-color: transparent;
+    width: 35px;
+    height: 21px;
+}
+
+.eyebtn:active{
+    border: 2px solid black;
 }
