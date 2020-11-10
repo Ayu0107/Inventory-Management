@@ -1,1 +1,1 @@
-# Inventory-Management
+#StockHome: An Inventory Management application
