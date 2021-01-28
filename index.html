@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS file -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Source+Serif+Pro:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Inventory Management</title>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav id="navbar">
+        <div class="dropdown">
+            <button class="loginbutton" onclick='login()'>LOGIN
+                <!-- <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Admin</a>
+                <a href="#">Sales Head</a>
+                <a href="#">Purchase Head</a>
+                <a href="#">Sales Person</a>
+            </div> -->
+        </div>
+        <a href="signup.html" class="navlink"> SIGNUP </a>
+        <a href="#whyus" class="navlink hidden"> SERVICES </a>
+        <a href="#teammembers" class="navlink hidden"> ABOUT </a>
+        <a href="#contactus" class="navlink hidden"> CONTACT US </a>
+    </nav>
+
+    <!-- Main Section of page -->
+
+    <section id="home">
+
+        <!-- <img src="sideimg.png" alt="Inventory"> -->
+        <h2>
+            Stop stressing over inventory <br> Use StockHome
+        </h2>
+        <p class="hidden">
+            Tracking inventory manually through books is difficult and results in late delivery and stock-out
+            situations.
+        </p>
+        <p>
+            StockHome helps you in saving your time and recording everything at a single place.
+        </p>
+        <p class="hidden">
+            No contracts or special hardware required—just create an account and you’re ready to go.
+        </p>
+
+        <!-- Services Section -->
+
+    </section>
+    <section id='whyus'>
+        <div id="section2">
+            <h3>WHY STOCKHOME?</h3>
+            <div class="container">
+                <div class='imgtext'>
+                    <img src="save money-1.png" alt="save money" id='chosingsh'>
+                    <span>Save Money</span>
+                </div>
+                <div class='imgtext'>
+                    <img src="save time-1.png" alt="save time" id='chosingsh'>
+                    <span>Save Time</span>
+                </div>
+                <div class='imgtext'>
+                    <img src="easy to access-1.png" alt="easy to access" id='chosingsh'>
+                    <span>Easy to Use</span>
+                </div>
+            </div>
+            <div id='section3'>
+                <p>"What's not to love about this FREE Online Inventory System!"</p>
+                <button id="createaccount" onclick="signup()">CREATE ACCOUNT</button>
+                <img src="free.png" alt="free" id="free">
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Members Details -->
+
+    <section id='teammembers'>
+        <h3>Team Members</h3>
+        <p>We are three students of Vellore Institute of Technology, Vellore who together created this project under the
+            guidance of Swarnaltha Ma'am, Software Engineering Methodologies professor.</p>
+        <div id="team">
+            <div class="imgtext">
+                <img src="ayu-5.jpeg" alt="1">
+                <span class="name">Ayushi Aggarwal</span>
+                <span class="task">UI/UX designer and Frontend developer </span>
+            </div>
+            <div class="imgtext">
+                <img src="ravi.jpeg" alt="2">
+                <span class="name">P. Ravindran</span>
+                <span class="task">Backend Developer</span>
+            </div>
+            <div class="imgtext">
+                <img src="sowmya.jpeg" alt="3">
+                <span class="name">Sowmya Rajnarayanan</span>
+                <span class="task">Backend Developer</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+
+    <section id="contactus">
+        <h3>Contact Us</h3>
+        <p>We will try to resolve your problem as soon as possible.</p>
+        <form action="#">
+            <input type="text" name='Myname' placeholder="Name" class="input" id="name">
+            <input type="email" name='Myemail' placeholder="Email id" class="input" id="email">
+            <input type="tel" name='Myphonenumber' placeholder="Phone number" class="input" id="phonenumber">
+            <textarea name="Message" id="doubt" cols="30" rows="10" class="input" placeholder="Message"></textarea>
+            <div id='submitbtn'>
+                <input type="submit" value="SUBMIT" id='submit' onclick="submitted()">
+            </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>Follow us on</p>
+        <div>
+            <a href="#">
+                <img src="twitter.png" alt="twitter">
+            </a>
+            <a href="#">
+                <img src="insta.jpg" alt="instagram">
+            </a>
+            <a href="#">
+                <img src="fb.png" alt="facebook">
+            </a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
