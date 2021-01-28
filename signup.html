@@ -136,8 +136,27 @@
 							</div>
 
 							<div class="form-group ">
-								<!-- <a href="#" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a> -->
-								<input type="submit" value="Register" class="btn float-right register_btn">
+								<a href="http://localhost/inventory-management-system/index.php" target="_blank" type="button" class="btn float-right register_btn">Register</a>
+								<!-- <input id="myBtn" type="submit" value="Register" class="btn float-right register_btn" onclick="login()"> -->
+
+								 <!-- Modal -->
+								 <div class="modal fade" id="myModal" role="dialog">
+									<div class="modal-dialog">
+					  
+									  <!-- Modal content-->
+									  <div class="modal-content">
+										<div class="modal-header">
+										  <h4 class="modal-title">Link Sent</h4>
+										  <button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<div class="modal-body">
+										  <p>Link has been successfully sent to your email id</p>
+										</div>
+										<div class="modal-footer">
+										  <button type="button" class="btn btn-default modalbtn" data-dismiss="modal">Close</button>
+										</div>
+									  </div>
+					
 							</div>
 
 						</form>
@@ -151,6 +170,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="bootstrap.min.js"></script>
+		<script src="signup.js"></script>
 	</body>
 
 </html>
